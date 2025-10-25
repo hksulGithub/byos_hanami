@@ -1,4 +1,2 @@
-release: bundle exec hanami db migrate
-web: bundle exec hanami assets compile && bundle exec puma --config ./config/puma.rb
-
+web: bundle exec puma -C config/puma.rb -b tcp://0.0.0.0:$PORT -e production
 tcp://0.0.0.0:$PORT
