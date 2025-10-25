@@ -104,4 +104,5 @@ ENTRYPOINT ["/app/bin/docker/entrypoint"]
 
 EXPOSE 2300
 
-CMD ["bundle", "exec", "puma", "--config", "./config/puma.rb"]
+
+CMD ["bundle", "exec", "puma", "-b", "tcp://0.0.0.0:$PORT", "-e", "production", "-t", "0:5"]
