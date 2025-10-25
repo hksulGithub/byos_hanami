@@ -1,1 +1,1 @@
-web: bundle exec puma -C config/puma.rb -b tcp://0.0.0.0:$PORT -e production
+web: bundle exec puma -b tcp://0.0.0.0:$PORT -e production -t 0:5
