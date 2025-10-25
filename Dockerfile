@@ -106,3 +106,6 @@ EXPOSE 2300
 
 
 CMD ["bundle", "exec", "puma", "-b", "tcp://0.0.0.0:$PORT", "-e", "production", "-t", "0:5"]
+
+
+
